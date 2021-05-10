@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Roboto&display=swap');
+
+// fonts
+$font: 'Roboto', sans-serif;
+$title: 'Domine', serif;
+
+// colors
+$gray: #edeeef;
+$green: #87cd63;
+$blue: #3184af;
+$darkBlue: #105d7d;
+
+// font size
+$xsFont: 0.7rem;
+$smFont: 0.875rem;
+$mdFont: 1.25rem;
+$lgFont: 1.5rem;
+$xlFont: 3.5rem;
+
+// font weight
+$mdWeight: 500;
+$lgWeight: 600;
+$xlWeight: 700;
+
+// button padding
+$buttonPadding: 0.7rem;
+
+// layout padding
+$padding: 4rem;
+
+// mixin
+@mixin button {
+	padding: $buttonPadding;
+	text-transform: uppercase;
+	font-size: $xsFont;
+	font-weight: $xlWeight;
+	color: $darkBlue;
+	background-color: $green;
+	border: none;
+	i {
+		margin-left: 0.313rem;
+	}
+}
+
+@mixin backgroundImage {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@mixin card {
+	text-align: center;
+	margin: 0 1.8rem;
+	color: $darkBlue;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+html,
+body {
+	font-family: $font;
+}
+
+.top-image {
+	background: url('../assets/orlando-florida-dentist.jpg');
+	@include backgroundImage;
+	position: absolute;
+	top: 0;
+	height: 700px;
+	width: 100%;
+}
+
+header {
+	.address-top {
+		background-color: $darkBlue;
+		color: white;
+		font-size: $smFont;
+		font-weight: $mdWeight;
+		padding: 0.7rem $padding;
+		display: flex;
+		justify-content: flex-end;
+		a {
+			color: white;
+		}
+		span {
+			margin: 0 0.4rem;
+		}
+	}
+}
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+
+	padding: 0.8rem $padding;
+	.header-logo {
+		width: 4.5rem;
+		height: auto;
+	}
+	nav {
+		margin-left: 3rem;
+		font-size: $smFont;
+		text-transform: uppercase;
+		ul {
+			list-style-type: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			li {
+				a {
+					font-weight: $mdWeight;
+					font-size: $xsFont + 0.1rem;
+					color: $darkBlue;
+				}
+				margin: 0.3rem;
+			}
+		}
+	}
+	button {
+		@include button;
+	}
+}
+
+section {
+	margin: 4rem 5rem 4rem 5rem;
+	color: white;
+	border: 1px solid white;
+	padding: $padding;
+
+	img {
+		width: 4rem;
+		padding-bottom: 1.4rem;
+		border-bottom: 1px solid white;
+		margin-right: 0.8rem;
+	}
+
+	h1 {
+		font-size: $xlFont;
+		font-family: $title;
+		font-weight: $mdWeight;
+		display: flex;
+		align-items: center;
+	}
+	p {
+		font-size: $lgFont;
+		width: 90%;
+		margin: 1rem 0;
+	}
+
+	button {
+		@include button;
+	}
+}
+
+.information-bar {
+	background-image: url('../assets/orlando-dental-office.jpg');
+
+	@include backgroundImage;
+
+	max-height: 34.44rem;
+	padding: 3rem $padding;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	.card {
+		@include card;
+
+		img {
+			width: 3rem;
+
+			position: relative;
+			top: 1.6rem;
+			background-color: white;
+			padding: 0 1.2rem;
+		}
+		h4 {
+			margin-top: 0.5rem;
+			font-family: $title;
+			font-size: $lgFont;
+		}
+		hr {
+			background-color: $blue;
+			color: $blue;
+			text-align: center;
+			width: 4rem;
+
+			margin: 0.8rem auto;
+		}
+		p {
+			font-size: $mdFont;
+			margin: 0.5rem 0;
+		}
+		.contact {
+			border: 1px solid $blue;
+			padding: 2rem 1.4rem;
+			padding-top: 2.5rem;
+		}
+	}
+}
+
+.services {
+	.row-one {
+		background-color: $blue;
+		color: white;
+		text-align: center;
+		font-size: $smFont + 0.225rem;
+		.first-line {
+			font-weight: $lgWeight;
+		}
+		p {
+			margin-bottom: 0.4rem;
+		}
+		padding: 4rem 0 8rem 0;
+	}
+	.row-two {
+		padding: 3rem $padding;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		background-color: $gray;
+        height: 240px;
+		.card {
+			@include card;
+			margin: 01.3rem;
+			width: 300px;
+			background-color: white;
+			height: 400px;
+			position: relative;
+			top: -170px;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+
+			.contact {
+				position: relative;
+				top: -170px;
+				background-color: transparent;
+				border: 1px solid $blue;
+				margin: auto;
+				width: 75%;
+				padding: 20px;
+
+				h4 {
+					padding-top: 175px;
+					font-family: $title;
+					font-size: $mdFont;
+				}
+				hr {
+					background-color: $blue;
+					color: $blue;
+					text-align: center;
+					width: 6rem;
+
+					margin: 0.8rem auto;
+				}
+
+				p {
+					font-size: $xsFont + 0.08rem;
+					margin: 0.5rem 0;
+				}
+				button {
+					@include button;
+					background-color: $blue;
+					color: white;
+					padding-left: 1rem;
+					padding-right: 1rem;
+				}
+			}
+		}
+	}
+}

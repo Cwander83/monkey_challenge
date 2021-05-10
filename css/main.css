@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.top-image {
+  background: url("../assets/orlando-florida-dentist.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  height: 700px;
+  width: 100%;
+}
+
+header .address-top {
+  background-color: #105d7d;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.7rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .address-top a {
+  color: white;
+}
+
+header .address-top span {
+  margin: 0 0.4rem;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 0.8rem 4rem;
+}
+
+.navigation .header-logo {
+  width: 4.5rem;
+  height: auto;
+}
+
+.navigation nav {
+  margin-left: 3rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.navigation nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigation nav ul li {
+  margin: 0.3rem;
+}
+
+.navigation nav ul li a {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #105d7d;
+}
+
+.navigation button {
+  padding: 0.7rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #105d7d;
+  background-color: #87cd63;
+  border: none;
+}
+
+.navigation button i {
+  margin-left: 0.313rem;
+}
+
+section {
+  margin: 4rem 5rem 4rem 5rem;
+  color: white;
+  border: 1px solid white;
+  padding: 4rem;
+}
+
+section img {
+  width: 4rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid white;
+  margin-right: 0.8rem;
+}
+
+section h1 {
+  font-size: 3.5rem;
+  font-family: "Domine", serif;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section p {
+  font-size: 1.5rem;
+  width: 90%;
+  margin: 1rem 0;
+}
+
+section button {
+  padding: 0.7rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #105d7d;
+  background-color: #87cd63;
+  border: none;
+}
+
+section button i {
+  margin-left: 0.313rem;
+}
+
+.information-bar {
+  background-image: url("../assets/orlando-dental-office.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 34.44rem;
+  padding: 3rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.information-bar .card {
+  text-align: center;
+  margin: 0 1.8rem;
+  color: #105d7d;
+}
+
+.information-bar .card img {
+  width: 3rem;
+  position: relative;
+  top: 1.6rem;
+  background-color: white;
+  padding: 0 1.2rem;
+}
+
+.information-bar .card h4 {
+  margin-top: 0.5rem;
+  font-family: "Domine", serif;
+  font-size: 1.5rem;
+}
+
+.information-bar .card hr {
+  background-color: #3184af;
+  color: #3184af;
+  text-align: center;
+  width: 4rem;
+  margin: 0.8rem auto;
+}
+
+.information-bar .card p {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.information-bar .card .contact {
+  border: 1px solid #3184af;
+  padding: 2rem 1.4rem;
+  padding-top: 2.5rem;
+}
+
+.services .row-one {
+  background-color: #3184af;
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 4rem 0 8rem 0;
+}
+
+.services .row-one .first-line {
+  font-weight: 600;
+}
+
+.services .row-one p {
+  margin-bottom: 0.4rem;
+}
+
+.services .row-two {
+  padding: 3rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #edeeef;
+  height: 240px;
+}
+
+.services .row-two .card {
+  text-align: center;
+  margin: 0 1.8rem;
+  color: #105d7d;
+  margin: 01.3rem;
+  width: 300px;
+  background-color: white;
+  height: 400px;
+  position: relative;
+  top: -170px;
+}
+
+.services .row-two .card img {
+  width: 100%;
+  height: auto;
+}
+
+.services .row-two .card .contact {
+  position: relative;
+  top: -170px;
+  background-color: transparent;
+  border: 1px solid #3184af;
+  margin: auto;
+  width: 75%;
+  padding: 20px;
+}
+
+.services .row-two .card .contact h4 {
+  padding-top: 175px;
+  font-family: "Domine", serif;
+  font-size: 1.25rem;
+}
+
+.services .row-two .card .contact hr {
+  background-color: #3184af;
+  color: #3184af;
+  text-align: center;
+  width: 6rem;
+  margin: 0.8rem auto;
+}
+
+.services .row-two .card .contact p {
+  font-size: 0.78rem;
+  margin: 0.5rem 0;
+}
+
+.services .row-two .card .contact button {
+  padding: 0.7rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #105d7d;
+  background-color: #87cd63;
+  border: none;
+  background-color: #3184af;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.services .row-two .card .contact button i {
+  margin-left: 0.313rem;
+}
+/*# sourceMappingURL=main.css.map */
