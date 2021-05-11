@@ -18,7 +18,7 @@ body {
   background-position: center;
   position: absolute;
   top: 0;
-  height: 700px;
+  height: 900px;
   width: 100%;
 }
 
@@ -27,7 +27,7 @@ header .address-top {
   color: white;
   font-size: 1rem;
   font-weight: 500;
-  padding: 0.7rem 4rem;
+  padding: 0.7rem 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,16 +55,16 @@ header .address-top span {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  padding: 0.8rem 4rem;
+  padding: 0.8rem 6rem;
 }
 
 .navigation .header-logo {
-  width: 4.5rem;
+  width: 5rem;
   height: auto;
 }
 
 .navigation nav {
-  margin-left: 3rem;
+  margin-left: 12rem;
   font-size: 1rem;
   text-transform: uppercase;
 }
@@ -83,7 +83,7 @@ header .address-top span {
 }
 
 .navigation nav ul li {
-  margin: 0.3rem;
+  margin: 0.5rem;
 }
 
 .navigation nav ul li a {
@@ -92,9 +92,9 @@ header .address-top span {
 }
 
 .navigation button {
-  padding: 0.8rem;
+  padding: 1rem 1.5rem;
   text-transform: uppercase;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #105d7d;
   background-color: #87cd63;
@@ -106,10 +106,10 @@ header .address-top span {
 }
 
 section {
-  margin: 4rem 5rem 4rem 5rem;
+  margin: 6rem 7rem;
   color: white;
   border: 1px solid white;
-  padding: 4rem;
+  padding: 8rem;
 }
 
 section img {
@@ -120,7 +120,7 @@ section img {
 }
 
 section h1 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-family: "Domine", serif;
   font-weight: 500;
   display: -webkit-box;
@@ -132,19 +132,20 @@ section h1 {
 }
 
 section p {
-  font-size: 1.5rem;
-  width: 90%;
-  margin: 1rem 0;
+  font-size: 2rem;
+  width: 58%;
+  margin: 1.5rem 0;
 }
 
 section button {
-  padding: 0.8rem;
+  padding: 1rem 1.5rem;
   text-transform: uppercase;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #105d7d;
   background-color: #87cd63;
   border: none;
+  margin-top: 2.5rem;
 }
 
 section button i {
@@ -239,7 +240,7 @@ section button i {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #edeeef;
-  height: 240px;
+  height: 280px;
 }
 
 .services .row-two .card {
@@ -249,7 +250,7 @@ section button i {
   margin: 01.3rem;
   width: 300px;
   background-color: white;
-  height: 400px;
+  height: 415px;
   position: relative;
   top: -170px;
 }
@@ -289,9 +290,9 @@ section button i {
 }
 
 .services .row-two .card .contact button {
-  padding: 0.8rem;
+  padding: 1rem 1.5rem;
   text-transform: uppercase;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #105d7d;
   background-color: #87cd63;
@@ -312,6 +313,9 @@ section button i {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.about .rows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,10 +323,10 @@ section button i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 7rem 0;
+  padding: 7rem 0 0 0;
 }
 
-.about .row-image {
+.about .rows .row-image {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -335,38 +339,38 @@ section button i {
           align-items: center;
 }
 
-.about .row-image img {
+.about .rows .row-image img {
   width: 31.5rem;
   margin-right: 4rem;
 }
 
-.about .row-info {
+.about .rows .row-info {
   width: 50%;
   margin-left: 4rem;
 }
 
-.about .row-info h1 {
+.about .rows .row-info h1 {
   font-size: 3.5rem;
   font-weight: 700;
   font-family: "Domine", serif;
   color: #3184af;
 }
 
-.about .row-info hr {
+.about .rows .row-info hr {
   margin: 2rem 0;
   background-color: #3184af;
   width: 28%;
   color: #3184af;
 }
 
-.about .row-info .overlay {
+.about .rows .row-info .overlay {
   width: 63%;
   color: #105d7d;
+  font-size: 1.25rem;
 }
 
-.about .row-info .overlay p {
+.about .rows .row-info .overlay p {
   word-break: normal;
-  font-size: 1.25rem;
   line-height: 1.8rem;
   margin-bottom: 1rem;
   -webkit-hyphens: auto;
@@ -374,21 +378,180 @@ section button i {
           hyphens: auto;
 }
 
-.about .row-info .overlay ul {
+.about .rows .row-info .overlay ul {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2.5rem 0;
 }
 
-.about .row-info button {
-  padding: 0.8rem;
+.about .rows .row-info .overlay ul li {
+  width: 50%;
+  padding-bottom: 0.2rem;
+}
+
+.about .rows .row-info button {
+  padding: 1rem 1.5rem;
   text-transform: uppercase;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #105d7d;
   background-color: #87cd63;
   border: none;
 }
 
-.about .row-info button i {
+.about .rows .row-info button i {
+  margin-left: 0.313rem;
+}
+
+.about .cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.about .cards .card {
+  text-align: center;
+  margin: 0 1.8rem;
+  color: #105d7d;
+  width: 12.5rem;
+  margin: 0 2rem 5rem 2rem;
+  padding: 2rem 1rem;
+}
+
+.about .cards .card img {
+  width: 4rem;
+}
+
+.about .cards .card h4 {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  font-family: "Domine", serif;
+  font-size: 1.5rem;
+}
+
+.review-form {
+  background-color: #105d7d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 8rem;
+}
+
+.review-form .row-review {
+  width: 50%;
+  padding: 4rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.review-form .row-review img {
+  width: 4rem;
+  height: auto;
+}
+
+.review-form .row-review p {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.review-form .row-review h4 {
+  font-weight: 700;
+}
+
+.review-form .row-review button {
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #105d7d;
+  background-color: #87cd63;
+  border: none;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.review-form .row-review button i {
+  margin-left: 0.313rem;
+}
+
+.review-form .row-form {
+  width: 50%;
+}
+
+.review-form .row-form .card {
+  text-align: center;
+  margin: 0 1.8rem;
+  color: #105d7d;
+  background-color: white;
+  width: 35rem;
+}
+
+.review-form .row-form .card h3 {
+  font-size: 4.5rem;
+  background-color: #3184af;
+  color: white;
+  font-family: "Domine", serif;
+  font-weight: 500;
+  padding: 4rem;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.review-form .row-form .card form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.review-form .row-form .card form input, .review-form .row-form .card form textarea {
+  width: 70%;
+  background-color: #edeeef;
+  border: none;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.review-form .row-form .card button {
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #105d7d;
+  background-color: #87cd63;
+  border: none;
+  margin-left: 0;
+}
+
+.review-form .row-form .card button i {
   margin-left: 0.313rem;
 }
 /*# sourceMappingURL=main.css.map */
