@@ -12,7 +12,7 @@ $darkBlue: #105d7d;
 
 // font size
 $xsFont: 0.7rem;
-$smFont: 0.875rem;
+$smFont: 1rem;
 $mdFont: 1.25rem;
 $lgFont: 1.5rem;
 $xlFont: 3.5rem;
@@ -23,7 +23,7 @@ $lgWeight: 600;
 $xlWeight: 700;
 
 // button padding
-$buttonPadding: 0.7rem;
+$buttonPadding: 0.8rem;
 
 // layout padding
 $padding: 4rem;
@@ -32,7 +32,7 @@ $padding: 4rem;
 @mixin button {
 	padding: $buttonPadding;
 	text-transform: uppercase;
-	font-size: $xsFont;
+	font-size: $xsFont + 0.15rem;
 	font-weight: $xlWeight;
 	color: $darkBlue;
 	background-color: $green;
@@ -114,8 +114,8 @@ header {
 			justify-content: center;
 			li {
 				a {
-					font-weight: $mdWeight;
-					font-size: $xsFont + 0.1rem;
+					font-weight: $lgWeight;
+
 					color: $darkBlue;
 				}
 				margin: 0.3rem;
@@ -224,7 +224,7 @@ section {
 		justify-content: center;
 		flex-direction: row;
 		background-color: $gray;
-        height: 240px;
+		height: 240px;
 		.card {
 			@include card;
 			margin: 01.3rem;
@@ -274,6 +274,62 @@ section {
 					padding-right: 1rem;
 				}
 			}
+		}
+	}
+}
+
+.about {
+	background: url('../assets/orlando-orthodontist.jpg');
+	@include backgroundImage;
+	display: flex;
+	flex-direction: row;
+	padding: 7rem 0;
+
+	.row-image {
+		width: 50%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		img {
+			width: 31.5rem;
+			margin-right: 4rem;
+		}
+	}
+	.row-info {
+		width: 50%;
+		margin-left: 4rem;
+		h1 {
+			font-size: $xlFont;
+			font-weight: $xlWeight;
+			font-family: $title;
+			color: $blue;
+		}
+
+		hr {
+			margin: 2rem 0;
+			background-color: $blue;
+			width: 28%;
+			color: $blue;
+		}
+
+		.overlay {
+			width: 63%;
+			color: $darkBlue;
+			p {
+				word-break: normal;
+				font-size: $mdFont;
+				line-height: 1.8rem;
+				margin-bottom: 1rem;
+				hyphens: auto;
+			}
+			ul {
+				list-style-type: none;
+			}
+		}
+
+		button {
+			@include button;
 		}
 	}
 }

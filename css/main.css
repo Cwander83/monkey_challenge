@@ -25,7 +25,7 @@ body {
 header .address-top {
   background-color: #105d7d;
   color: white;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   padding: 0.7rem 4rem;
   display: -webkit-box;
@@ -65,7 +65,7 @@ header .address-top span {
 
 .navigation nav {
   margin-left: 3rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
@@ -87,15 +87,14 @@ header .address-top span {
 }
 
 .navigation nav ul li a {
-  font-weight: 500;
-  font-size: 0.8rem;
+  font-weight: 600;
   color: #105d7d;
 }
 
 .navigation button {
-  padding: 0.7rem;
+  padding: 0.8rem;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: #105d7d;
   background-color: #87cd63;
@@ -139,9 +138,9 @@ section p {
 }
 
 section button {
-  padding: 0.7rem;
+  padding: 0.8rem;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: #105d7d;
   background-color: #87cd63;
@@ -215,7 +214,7 @@ section button i {
   background-color: #3184af;
   color: white;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.225rem;
   padding: 4rem 0 8rem 0;
 }
 
@@ -290,9 +289,9 @@ section button i {
 }
 
 .services .row-two .card .contact button {
-  padding: 0.7rem;
+  padding: 0.8rem;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: #105d7d;
   background-color: #87cd63;
@@ -304,6 +303,92 @@ section button i {
 }
 
 .services .row-two .card .contact button i {
+  margin-left: 0.313rem;
+}
+
+.about {
+  background: url("../assets/orlando-orthodontist.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 7rem 0;
+}
+
+.about .row-image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .row-image img {
+  width: 31.5rem;
+  margin-right: 4rem;
+}
+
+.about .row-info {
+  width: 50%;
+  margin-left: 4rem;
+}
+
+.about .row-info h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: "Domine", serif;
+  color: #3184af;
+}
+
+.about .row-info hr {
+  margin: 2rem 0;
+  background-color: #3184af;
+  width: 28%;
+  color: #3184af;
+}
+
+.about .row-info .overlay {
+  width: 63%;
+  color: #105d7d;
+}
+
+.about .row-info .overlay p {
+  word-break: normal;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+  margin-bottom: 1rem;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+.about .row-info .overlay ul {
+  list-style-type: none;
+}
+
+.about .row-info button {
+  padding: 0.8rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #105d7d;
+  background-color: #87cd63;
+  border: none;
+}
+
+.about .row-info button i {
   margin-left: 0.313rem;
 }
 /*# sourceMappingURL=main.css.map */
