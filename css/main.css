@@ -423,13 +423,14 @@ section button i {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .about .cards .card {
   text-align: center;
   margin: 0 1.8rem;
   color: #105d7d;
-  width: 12.5rem;
+  width: 14rem;
   margin: 0 2rem 5rem 2rem;
   padding: 2rem 1rem;
 }
@@ -459,23 +460,25 @@ section button i {
 
 .review-form .row-review {
   width: 50%;
-  padding: 4rem;
+  padding: 6rem;
   font-size: 2rem;
   color: white;
 }
 
 .review-form .row-review img {
-  width: 4rem;
+  width: 6rem;
   height: auto;
 }
 
 .review-form .row-review p {
   font-weight: 500;
   font-style: italic;
+  padding: 2rem 0;
 }
 
 .review-form .row-review h4 {
   font-weight: 700;
+  padding-bottom: 2rem;
 }
 
 .review-form .row-review button {
@@ -486,6 +489,7 @@ section button i {
   color: #105d7d;
   background-color: #87cd63;
   border: none;
+  margin-top: 2rem;
   border: 1px solid white;
   background-color: transparent;
   color: white;
@@ -504,18 +508,29 @@ section button i {
   margin: 0 1.8rem;
   color: #105d7d;
   background-color: white;
-  width: 35rem;
+  width: 30rem;
+  position: relative;
+  top: -5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-.review-form .row-form .card h3 {
-  font-size: 4.5rem;
+.review-form .row-form .card .overlay {
   background-color: #3184af;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+.review-form .row-form .card .overlay h3 {
+  font-size: 3.5rem;
   color: white;
   font-family: "Domine", serif;
   font-weight: 500;
-  padding: 4rem;
   text-transform: capitalize;
   text-align: left;
+  border: 1px solid #105d7d;
+  padding: 2rem 2rem;
 }
 
 .review-form .row-form .card form {
@@ -529,15 +544,24 @@ section button i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 1px solid #105d7d;
+  border-top: none;
+  margin: 0 2rem 2rem 2rem;
+  position: relative;
+  top: -1.5rem;
+  padding-top: 2rem;
 }
 
-.review-form .row-form .card form input, .review-form .row-form .card form textarea {
+.review-form .row-form .card form input,
+.review-form .row-form .card form textarea {
   width: 70%;
   background-color: #edeeef;
   border: none;
   margin: 1rem auto;
-  padding: 0.5rem;
+  padding: 1rem;
   font-size: 1rem;
+  resize: none;
+  font-family: "Roboto", sans-serif;
 }
 
 .review-form .row-form .card button {
@@ -548,10 +572,106 @@ section button i {
   color: #105d7d;
   background-color: #87cd63;
   border: none;
-  margin-left: 0;
+  margin: 1rem 2.812rem 2rem 2.812rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .review-form .row-form .card button i {
   margin-left: 0.313rem;
+}
+
+.providers {
+  background-color: white;
+  width: 75%;
+  padding: 4rem 0;
+  margin: 0 auto;
+  color: #105d7d;
+}
+
+.providers h1 {
+  font-family: "Domine", serif;
+  font-size: 4rem;
+  font-weight: 500;
+  width: 100%;
+  color: #3184af;
+}
+
+.providers hr {
+  width: 18%;
+  margin: 2rem 0 1.5rem 0;
+  background-color: #105d7d;
+}
+
+.providers ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.providers ul li {
+  width: 25%;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.providers ul li i {
+  -webkit-text-stroke: 0.15rem white;
+  margin-right: 0.5rem;
+  color: #3184af;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 4rem 13rem;
+  background-color: #105d7d;
+  color: white;
+}
+
+footer .company-icon {
+  border-right: 1px solid white;
+  width: 33%;
+}
+
+footer .company-icon img {
+  width: 10rem;
+}
+
+footer .company-icon p {
+  font-size: 1rem;
+}
+
+footer .site-map {
+  width: 66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .site-map .col-1 h4 {
+  text-transform: uppercase;
+}
+
+footer .site-map .col-1 ul {
+  list-style-type: none;
+}
+
+footer .site-map .col-1 ul li a {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
