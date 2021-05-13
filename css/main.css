@@ -18,16 +18,16 @@ body {
   background-position: center;
   position: absolute;
   top: 0;
-  height: 900px;
+  height: 1000px;
   width: 100%;
 }
 
 header .address-top {
   background-color: #105d7d;
   color: white;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
-  padding: 0.7rem 6rem;
+  padding: 0.7rem 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,16 +55,16 @@ header .address-top span {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  padding: 0.8rem 6rem;
+  padding: 1rem 7rem;
 }
 
-.navigation .header-logo {
-  width: 5rem;
+.navigation img {
+  width: 6rem;
   height: auto;
 }
 
 .navigation nav {
-  margin-left: 12rem;
+  margin-left: 4rem;
   font-size: 1rem;
   text-transform: uppercase;
 }
@@ -262,16 +262,16 @@ section button i {
 
 .services .row-two .card .contact {
   position: relative;
-  top: -170px;
+  top: -10.625rem;
   background-color: transparent;
   border: 1px solid #3184af;
   margin: auto;
   width: 75%;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .services .row-two .card .contact h4 {
-  padding-top: 175px;
+  padding-top: 10.937rem;
   font-family: "Domine", serif;
   font-size: 1.25rem;
 }
@@ -460,7 +460,8 @@ section button i {
 
 .review-form .row-review {
   width: 50%;
-  padding: 6rem;
+  padding: 6rem 0;
+  padding-right: 1rem;
   font-size: 2rem;
   color: white;
 }
@@ -584,7 +585,7 @@ section button i {
 
 .providers {
   background-color: white;
-  width: 75%;
+  width: 80%;
   padding: 4rem 0;
   margin: 0 auto;
   color: #105d7d;
@@ -638,7 +639,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  padding: 4rem 13rem;
+  padding: 4rem 10rem;
   background-color: #105d7d;
   color: white;
 }
@@ -649,29 +650,71 @@ footer .company-icon {
 }
 
 footer .company-icon img {
-  width: 10rem;
+  width: 8rem;
 }
 
 footer .company-icon p {
   font-size: 1rem;
+  width: 80%;
+  padding: 1rem 0;
 }
 
 footer .site-map {
-  width: 66%;
+  width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: 500;
 }
 
-footer .site-map .col-1 h4 {
-  text-transform: uppercase;
+footer .site-map .col h4 {
+  text-transform: capitalize;
+  padding: .9rem 0;
+  font-size: 1.25rem;
 }
 
-footer .site-map .col-1 ul {
+footer .site-map .col p {
+  padding: .3rem 0;
+}
+
+footer .site-map .col ul {
   list-style-type: none;
 }
 
-footer .site-map .col-1 ul li a {
+footer .site-map .col ul li {
+  padding: .28rem 0;
+}
+
+footer .site-map .col ul li a {
   color: white;
+}
+
+footer .site-map .col .social-icons {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer .site-map .col .social-icons img {
+  width: 2.5rem;
+  margin: 1.5rem 1.5rem 1.5rem 0;
+}
+
+footer .site-map .col .social-icons i {
+  font-size: 1.6rem;
+  border-radius: 100%;
+  background-color: #3184af;
+  margin: 1.5rem 1rem 1.5rem 0;
+  padding: .55rem;
 }
 /*# sourceMappingURL=main.css.map */
