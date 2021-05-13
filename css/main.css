@@ -18,16 +18,16 @@ body {
   background-position: center;
   position: absolute;
   top: 0;
-  height: 700px;
+  height: 1000px;
   width: 100%;
 }
 
 header .address-top {
   background-color: #105d7d;
   color: white;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   font-weight: 500;
-  padding: 0.7rem 4rem;
+  padding: 0.7rem 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,17 +55,17 @@ header .address-top span {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  padding: 0.8rem 4rem;
+  padding: 1rem 7rem;
 }
 
-.navigation .header-logo {
-  width: 4.5rem;
+.navigation img {
+  width: 6rem;
   height: auto;
 }
 
 .navigation nav {
-  margin-left: 3rem;
-  font-size: 0.875rem;
+  margin-left: 4rem;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
@@ -83,19 +83,18 @@ header .address-top span {
 }
 
 .navigation nav ul li {
-  margin: 0.3rem;
+  margin: 0.5rem;
 }
 
 .navigation nav ul li a {
-  font-weight: 500;
-  font-size: 0.8rem;
+  font-weight: 600;
   color: #105d7d;
 }
 
 .navigation button {
-  padding: 0.7rem;
+  padding: 1rem 1.5rem;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #105d7d;
   background-color: #87cd63;
@@ -107,10 +106,10 @@ header .address-top span {
 }
 
 section {
-  margin: 4rem 5rem 4rem 5rem;
+  margin: 6rem 7rem;
   color: white;
   border: 1px solid white;
-  padding: 4rem;
+  padding: 8rem;
 }
 
 section img {
@@ -121,7 +120,7 @@ section img {
 }
 
 section h1 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-family: "Domine", serif;
   font-weight: 500;
   display: -webkit-box;
@@ -133,19 +132,20 @@ section h1 {
 }
 
 section p {
-  font-size: 1.5rem;
-  width: 90%;
-  margin: 1rem 0;
+  font-size: 2rem;
+  width: 58%;
+  margin: 1.5rem 0;
 }
 
 section button {
-  padding: 0.7rem;
+  padding: 1rem 1.5rem;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #105d7d;
   background-color: #87cd63;
   border: none;
+  margin-top: 2.5rem;
 }
 
 section button i {
@@ -215,7 +215,7 @@ section button i {
   background-color: #3184af;
   color: white;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.225rem;
   padding: 4rem 0 8rem 0;
 }
 
@@ -240,7 +240,7 @@ section button i {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #edeeef;
-  height: 240px;
+  height: 280px;
 }
 
 .services .row-two .card {
@@ -250,7 +250,7 @@ section button i {
   margin: 01.3rem;
   width: 300px;
   background-color: white;
-  height: 400px;
+  height: 415px;
   position: relative;
   top: -170px;
 }
@@ -262,16 +262,16 @@ section button i {
 
 .services .row-two .card .contact {
   position: relative;
-  top: -170px;
+  top: -10.625rem;
   background-color: transparent;
   border: 1px solid #3184af;
   margin: auto;
   width: 75%;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .services .row-two .card .contact h4 {
-  padding-top: 175px;
+  padding-top: 10.937rem;
   font-family: "Domine", serif;
   font-size: 1.25rem;
 }
@@ -290,9 +290,9 @@ section button i {
 }
 
 .services .row-two .card .contact button {
-  padding: 0.7rem;
+  padding: 1rem 1.5rem;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #105d7d;
   background-color: #87cd63;
@@ -305,5 +305,416 @@ section button i {
 
 .services .row-two .card .contact button i {
   margin-left: 0.313rem;
+}
+
+.about {
+  background: url("../assets/orlando-orthodontist.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about .rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 7rem 0 0 0;
+}
+
+.about .rows .row-image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .rows .row-image img {
+  width: 31.5rem;
+  margin-right: 4rem;
+}
+
+.about .rows .row-info {
+  width: 50%;
+  margin-left: 4rem;
+}
+
+.about .rows .row-info h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: "Domine", serif;
+  color: #3184af;
+}
+
+.about .rows .row-info hr {
+  margin: 2rem 0;
+  background-color: #3184af;
+  width: 28%;
+  color: #3184af;
+}
+
+.about .rows .row-info .overlay {
+  width: 63%;
+  color: #105d7d;
+  font-size: 1.25rem;
+}
+
+.about .rows .row-info .overlay p {
+  word-break: normal;
+  line-height: 1.8rem;
+  margin-bottom: 1rem;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+.about .rows .row-info .overlay ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2.5rem 0;
+}
+
+.about .rows .row-info .overlay ul li {
+  width: 50%;
+  padding-bottom: 0.2rem;
+}
+
+.about .rows .row-info button {
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #105d7d;
+  background-color: #87cd63;
+  border: none;
+}
+
+.about .rows .row-info button i {
+  margin-left: 0.313rem;
+}
+
+.about .cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.about .cards .card {
+  text-align: center;
+  margin: 0 1.8rem;
+  color: #105d7d;
+  width: 14rem;
+  margin: 0 2rem 5rem 2rem;
+  padding: 2rem 1rem;
+}
+
+.about .cards .card img {
+  width: 4rem;
+}
+
+.about .cards .card h4 {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  font-family: "Domine", serif;
+  font-size: 1.5rem;
+}
+
+.review-form {
+  background-color: #105d7d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 8rem;
+}
+
+.review-form .row-review {
+  width: 50%;
+  padding: 6rem 0;
+  padding-right: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.review-form .row-review img {
+  width: 6rem;
+  height: auto;
+}
+
+.review-form .row-review p {
+  font-weight: 500;
+  font-style: italic;
+  padding: 2rem 0;
+}
+
+.review-form .row-review h4 {
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+
+.review-form .row-review button {
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #105d7d;
+  background-color: #87cd63;
+  border: none;
+  margin-top: 2rem;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.review-form .row-review button i {
+  margin-left: 0.313rem;
+}
+
+.review-form .row-form {
+  width: 50%;
+}
+
+.review-form .row-form .card {
+  text-align: center;
+  margin: 0 1.8rem;
+  color: #105d7d;
+  background-color: white;
+  width: 30rem;
+  position: relative;
+  top: -5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.review-form .row-form .card .overlay {
+  background-color: #3184af;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+.review-form .row-form .card .overlay h3 {
+  font-size: 3.5rem;
+  color: white;
+  font-family: "Domine", serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: left;
+  border: 1px solid #105d7d;
+  padding: 2rem 2rem;
+}
+
+.review-form .row-form .card form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #105d7d;
+  border-top: none;
+  margin: 0 2rem 2rem 2rem;
+  position: relative;
+  top: -1.5rem;
+  padding-top: 2rem;
+}
+
+.review-form .row-form .card form input,
+.review-form .row-form .card form textarea {
+  width: 70%;
+  background-color: #edeeef;
+  border: none;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+  resize: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.review-form .row-form .card button {
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #105d7d;
+  background-color: #87cd63;
+  border: none;
+  margin: 1rem 2.812rem 2rem 2.812rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.review-form .row-form .card button i {
+  margin-left: 0.313rem;
+}
+
+.providers {
+  background-color: white;
+  width: 80%;
+  padding: 4rem 0;
+  margin: 0 auto;
+  color: #105d7d;
+}
+
+.providers h1 {
+  font-family: "Domine", serif;
+  font-size: 4rem;
+  font-weight: 500;
+  width: 100%;
+  color: #3184af;
+}
+
+.providers hr {
+  width: 18%;
+  margin: 2rem 0 1.5rem 0;
+  background-color: #105d7d;
+}
+
+.providers ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.providers ul li {
+  width: 25%;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.providers ul li i {
+  -webkit-text-stroke: 0.15rem white;
+  margin-right: 0.5rem;
+  color: #3184af;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 4rem 10rem;
+  background-color: #105d7d;
+  color: white;
+}
+
+footer .company-icon {
+  border-right: 1px solid white;
+  width: 33%;
+}
+
+footer .company-icon img {
+  width: 8rem;
+}
+
+footer .company-icon p {
+  font-size: 1rem;
+  width: 80%;
+  padding: 1rem 0;
+}
+
+footer .site-map {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: 500;
+}
+
+footer .site-map .col h4 {
+  text-transform: capitalize;
+  padding: .9rem 0;
+  font-size: 1.25rem;
+}
+
+footer .site-map .col p {
+  padding: .3rem 0;
+}
+
+footer .site-map .col ul {
+  list-style-type: none;
+}
+
+footer .site-map .col ul li {
+  padding: .28rem 0;
+}
+
+footer .site-map .col ul li a {
+  color: white;
+}
+
+footer .site-map .col .social-icons {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer .site-map .col .social-icons img {
+  width: 2.5rem;
+  margin: 1.5rem 1.5rem 1.5rem 0;
+}
+
+footer .site-map .col .social-icons i {
+  font-size: 1.6rem;
+  border-radius: 100%;
+  background-color: #3184af;
+  margin: 1.5rem 1rem 1.5rem 0;
+  padding: .55rem;
 }
 /*# sourceMappingURL=main.css.map */

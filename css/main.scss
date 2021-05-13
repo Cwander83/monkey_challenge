@@ -12,7 +12,7 @@ $darkBlue: #105d7d;
 
 // font size
 $xsFont: 0.7rem;
-$smFont: 0.875rem;
+$smFont: 1rem;
 $mdFont: 1.25rem;
 $lgFont: 1.5rem;
 $xlFont: 3.5rem;
@@ -23,16 +23,16 @@ $lgWeight: 600;
 $xlWeight: 700;
 
 // button padding
-$buttonPadding: 0.7rem;
+$buttonPadding: 1rem;
 
 // layout padding
 $padding: 4rem;
 
 // mixin
 @mixin button {
-	padding: $buttonPadding;
+	padding: $buttonPadding 1.5rem;
 	text-transform: uppercase;
-	font-size: $xsFont;
+	font-size: $smFont;
 	font-weight: $xlWeight;
 	color: $darkBlue;
 	background-color: $green;
@@ -71,7 +71,7 @@ body {
 	@include backgroundImage;
 	position: absolute;
 	top: 0;
-	height: 700px;
+	height: 1000px;
 	width: 100%;
 }
 
@@ -79,9 +79,9 @@ header {
 	.address-top {
 		background-color: $darkBlue;
 		color: white;
-		font-size: $smFont;
+		font-size: $mdFont;
 		font-weight: $mdWeight;
-		padding: 0.7rem $padding;
+		padding: 0.7rem 7rem;
 		display: flex;
 		justify-content: flex-end;
 		a {
@@ -98,13 +98,13 @@ header {
 	align-items: center;
 	background-color: white;
 
-	padding: 0.8rem $padding;
-	.header-logo {
-		width: 4.5rem;
+	padding: 1rem 7rem;
+	img {
+		width: 6rem;
 		height: auto;
 	}
 	nav {
-		margin-left: 3rem;
+		margin-left: 4rem;
 		font-size: $smFont;
 		text-transform: uppercase;
 		ul {
@@ -114,11 +114,11 @@ header {
 			justify-content: center;
 			li {
 				a {
-					font-weight: $mdWeight;
-					font-size: $xsFont + 0.1rem;
+					font-weight: $lgWeight;
+
 					color: $darkBlue;
 				}
-				margin: 0.3rem;
+				margin: 0.5rem;
 			}
 		}
 	}
@@ -128,10 +128,10 @@ header {
 }
 
 section {
-	margin: 4rem 5rem 4rem 5rem;
+	margin: 6rem 7rem;
 	color: white;
 	border: 1px solid white;
-	padding: $padding;
+	padding: $padding + 4rem;
 
 	img {
 		width: 4rem;
@@ -141,20 +141,21 @@ section {
 	}
 
 	h1 {
-		font-size: $xlFont;
+		font-size: $xlFont + 1rem;
 		font-family: $title;
 		font-weight: $mdWeight;
 		display: flex;
 		align-items: center;
 	}
 	p {
-		font-size: $lgFont;
-		width: 90%;
-		margin: 1rem 0;
+		font-size: $lgFont + 0.5rem;
+		width: 58%;
+		margin: 1.5rem 0;
 	}
 
 	button {
 		@include button;
+		margin-top: 2.5rem;
 	}
 }
 
@@ -224,13 +225,13 @@ section {
 		justify-content: center;
 		flex-direction: row;
 		background-color: $gray;
-        height: 240px;
+		height: 280px;
 		.card {
 			@include card;
 			margin: 01.3rem;
 			width: 300px;
 			background-color: white;
-			height: 400px;
+			height: 415px;
 			position: relative;
 			top: -170px;
 
@@ -241,15 +242,15 @@ section {
 
 			.contact {
 				position: relative;
-				top: -170px;
+				top: -10.625rem;
 				background-color: transparent;
 				border: 1px solid $blue;
 				margin: auto;
 				width: 75%;
-				padding: 20px;
+				padding: 1.25rem;
 
 				h4 {
-					padding-top: 175px;
+					padding-top: 10.937rem;
 					font-family: $title;
 					font-size: $mdFont;
 				}
@@ -272,6 +273,298 @@ section {
 					color: white;
 					padding-left: 1rem;
 					padding-right: 1rem;
+				}
+			}
+		}
+	}
+}
+
+.about {
+	background: url('../assets/orlando-orthodontist.jpg');
+	@include backgroundImage;
+	.rows {
+		display: flex;
+		flex-direction: row;
+		padding: 7rem 0 0 0;
+
+		.row-image {
+			width: 50%;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+
+			img {
+				width: 31.5rem;
+				margin-right: 4rem;
+			}
+		}
+		.row-info {
+			width: 50%;
+			margin-left: 4rem;
+			h1 {
+				font-size: $xlFont;
+				font-weight: $xlWeight;
+				font-family: $title;
+				color: $blue;
+			}
+
+			hr {
+				margin: 2rem 0;
+				background-color: $blue;
+				width: 28%;
+				color: $blue;
+			}
+
+			.overlay {
+				width: 63%;
+				color: $darkBlue;
+				font-size: $mdFont;
+				p {
+					word-break: normal;
+					line-height: 1.8rem;
+					margin-bottom: 1rem;
+					hyphens: auto;
+				}
+				ul {
+					list-style-type: none;
+					display: flex;
+					justify-content: flex-start;
+					flex-wrap: wrap;
+					margin: 2.5rem 0;
+					li {
+						width: 50%;
+						padding-bottom: 0.2rem;
+					}
+				}
+			}
+
+			button {
+				@include button;
+			}
+		}
+	}
+	.cards {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 2rem;
+		padding-bottom: 2rem;
+
+		.card {
+			@include card;
+			width: 14rem;
+			margin: 0 2rem 5rem 2rem;
+			padding: 2rem 1rem;
+			img {
+				width: 4rem;
+			}
+			h4 {
+				padding-top: 1.5rem;
+				padding-bottom: 0.5rem;
+				font-family: $title;
+				font-size: $lgFont;
+			}
+		}
+	}
+}
+
+.review-form {
+	background-color: $darkBlue;
+	display: flex;
+	flex-direction: row;
+	padding: 0 8rem;
+
+	.row-review {
+		width: 50%;
+		padding: 6rem 0;
+		padding-right: 1rem;
+		font-size: $lgFont + 0.5rem;
+		color: white;
+		img {
+			width: 6rem;
+			height: auto;
+		}
+		p {
+			font-weight: $mdWeight;
+			font-style: italic;
+			padding: 2rem 0;
+		}
+		h4 {
+			font-weight: $xlWeight;
+			padding-bottom: 2rem;
+		}
+		button {
+			@include button;
+			margin-top: 2rem;
+			border: 1px solid white;
+			background-color: transparent;
+			color: white;
+		}
+	}
+	.row-form {
+		width: 50%;
+		.card {
+			@include card;
+			background-color: white;
+			width: 30rem;
+			position: relative;
+			top: -5rem;
+			height: fit-content;
+			.overlay {
+				background-color: $blue;
+				padding: 2rem;
+				padding-bottom: 0;
+
+				h3 {
+					font-size: $xlFont;
+					color: white;
+					font-family: $title;
+					font-weight: $mdWeight;
+					text-transform: capitalize;
+					text-align: left;
+					border: 1px solid $darkBlue;
+					padding: 2rem 2rem;
+				}
+			}
+			form {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				border: 1px solid $darkBlue;
+				border-top: none;
+
+				margin: 0 2rem 2rem 2rem;
+				position: relative;
+				top: -1.5rem;
+				padding-top: 2rem;
+
+				input,
+				textarea {
+					width: 70%;
+					background-color: $gray;
+					border: none;
+					margin: 1rem auto;
+					padding: 1rem;
+					font-size: 1rem;
+					resize: none;
+					font-family: $font;
+				}
+			}
+			button {
+				@include button;
+				margin: 1rem 2.812rem 2rem 2.812rem;
+
+				width: fit-content;
+			}
+		}
+	}
+}
+
+.providers {
+	background-color: white;
+	width: 80%;
+	padding: 4rem 0;
+	margin: 0 auto;
+	color: $darkBlue;
+
+	h1 {
+		font-family: $title;
+		font-size: $xlFont + 0.5rem;
+		font-weight: $mdWeight;
+		width: 100%;
+		color: $blue;
+	}
+
+	hr {
+		width: 18%;
+		margin: 2rem 0 1.5rem 0;
+		background-color: $darkBlue;
+	}
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		list-style-type: none;
+		li {
+			width: 25%;
+			font-size: $lgFont + 0.5rem;
+			padding-bottom: 0.5rem;
+			font-weight: $mdWeight;
+
+			i {
+				-webkit-text-stroke: 0.15rem white;
+				margin-right: 0.5rem;
+				color: $blue;
+			}
+		}
+	}
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	margin: 0 auto;
+	padding: 4rem 10rem;
+	background-color: $darkBlue;
+	color: white;
+	.company-icon {
+		border-right: 1px solid white;
+		width: 33%;
+		img {
+			width: 8rem;
+		}
+		p {
+			font-size: $smFont;
+			width: 80%;
+			padding: 1rem 0;
+		}
+	}
+	.site-map {
+		width: 75%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		font-weight: $mdWeight;
+		
+		.col {
+			h4 {
+				text-transform: capitalize;
+				padding: .9rem 0;
+				font-size: $mdFont;
+
+			}
+			p {
+				padding: .3rem 0;
+			}
+			ul {
+				list-style-type: none;
+				li {
+					padding: .28rem 0;
+					a {
+						color: white;
+
+					}
+				}
+			}
+			.social-icons {
+				list-style-type: none;
+				display:flex;
+				justify-content: flex-start;
+				
+				img{
+					width: 2.5rem;
+					margin: 1.5rem 1.5rem 1.5rem 0;
+					
+					
+				}
+				i {
+					font-size: 1.6rem;
+					border-radius: 100%;
+					background-color: $blue;
+					margin: 1.5rem 1rem 1.5rem 0;
+					padding: .55rem;
 				}
 			}
 		}
